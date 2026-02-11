@@ -13,13 +13,14 @@ const Navbar = () => {
   const setTheme = (theme) => {
     document.documentElement.classList.remove("light", "dark")
     document.documentElement.classList.add(theme)
+    localStorage.setItem("theme", theme)
   }
 
   const menus = ["Home", "Services", "Projects", "About"]
 
   return (
     <nav className="fixed top-4 left-1/2 z-50 w-[95%] -translate-x-1/2">
-      <div className="flex items-center justify-between rounded-full border border-white/20 bg-white/10 px-6 py-3 backdrop-blur-xl shadow-lg dark:bg-black/20">
+      <div className="flex items-center justify-between rounded-full border border-border bg-background/80 px-6 py-3 backdrop-blur-xl shadow-lg">
 
         {/* Left - Logo */}
         <h1 className="text-xl font-extrabold tracking-wide">
@@ -48,7 +49,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
 
           {/* Theme Toggle */}
-          <DropdownMenu>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Sun className="h-5 w-5 dark:hidden" />
@@ -63,7 +64,7 @@ const Navbar = () => {
                 Dark
               </DropdownMenuItem>
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
 
           {/* Contact Button */}
           <Button className="hidden md:inline-flex rounded-full px-6">

@@ -11,8 +11,8 @@ const brands = [
 
 const TrustedBy = () => {
   return (
-    <section className="relative overflow-hidden bg-black py-6 text-white">
-      <p className="mb-6 text-center text-sm text-white/60">
+    <section className="relative overflow-hidden bg-background py-6 text-foreground">
+      <p className="mb-6 text-center text-sm text-muted-foreground">
         Trusted by teams and creators worldwide
       </p>
 
@@ -30,7 +30,7 @@ const TrustedBy = () => {
           {[...brands, ...brands].map((brand, i) => (
             <span
               key={i}
-              className="text-lg font-semibold text-white/40"
+              className="text-lg font-semibold text-muted-foreground"
             >
               {brand}
             </span>

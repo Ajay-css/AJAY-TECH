@@ -64,18 +64,18 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.15 }}
                   viewport={{ once: true }}
-                  className="group rounded-2xl border border-white/10 bg-neutral-900/60 p-6 hover:border-emerald-400/40 transition"
-                >
+                  className="group rounded-2xl border border-border bg-card p-6 hover:shadow-xl transition" 
+                                 >
                   {/* TOP ICON AREA */}
                   <div className="mb-5 flex items-center justify-center w-12 h-12 rounded-xl bg-emerald-400/10 group-hover:bg-emerald-400/20 transition">
                     <Icon className="w-6 h-6 text-emerald-400" />
                   </div>
 
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-foreground">
                     {service.title}
                   </h3>
 
-                  <p className="mt-3 text-sm text-gray-400 leading-relaxed">
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                     {service.desc}
                   </p>
                 </motion.div>
