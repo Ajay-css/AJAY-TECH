@@ -11,6 +11,7 @@ import heroImg6 from "../assets/p-6.png"
 import heroImg7 from "../assets/p-7.png"
 import heroImg8 from "../assets/p-8.png"
 import heroImg9 from "../assets/p-9.png"
+import heroImg10 from "../assets/p10.png"
 
 const projects = [
   {
@@ -71,6 +72,12 @@ const projects = [
     title: "Online Multi Code Editor",
     image: heroImg,
     liveUrl: "https://xavierside.vercel.app",
+    category: "mern",
+  },
+  {
+    title: "Xaviers Writer",
+    image: heroImg10,
+    liveUrl: "https://xaviers-writer.vercel.app",
     category: "mern",
   },
 ]
